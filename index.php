@@ -198,7 +198,7 @@
         <section class="notice-area pt-150 pb-150">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
                         <div class="notice-left">
                             <h3>Panel de noticias</h3>
                             <?php
@@ -213,7 +213,7 @@
                             <?php } ?>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12">
+                    <!-- <div class="col-md-6 col-sm-6 col-xs-12">
                         <div class="notice-right">
                             <div class="single-notice-right mb-25 pb-25">
                                 <h3>PERFIL DE EGRESO</h3>
@@ -228,7 +228,7 @@
                                 <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
                             </div>   
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
