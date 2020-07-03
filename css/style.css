@@ -2533,6 +2533,7 @@ textarea {
 }
 .about-content p{
     font-size: 14px;
+    text-align: justify;
     color: #606060;
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 10px;
