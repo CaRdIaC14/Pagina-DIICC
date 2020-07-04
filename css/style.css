@@ -2559,6 +2559,18 @@ textarea {
     color: #fff;
     background: #254C5A;  
 }
+.lineamientos{
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.laboratorios{
+    position: relative;
+    color: #666666;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    left: 50px;
+}
 .about-img{
     position: relative; 
     z-index: 1;
