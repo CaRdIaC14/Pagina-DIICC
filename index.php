@@ -84,7 +84,7 @@
                                                         <li><a href="Carrera-postitulo-Diplomado-gestion.html">Diplomado en gestión de tecnologias de la información</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a>Postgrado</a>
+                                                <li><a href="AreaSoftware.html">Postgrado</a>
                                                     <ul>
                                                         <li><a href="postgrado-tecnologia.html">Magister en tecnologias de la informacion e innovación</a></li>
                                                         <li><a href="postgrado-informatica.html">Magister en Informática y Ciencias de la Computación</a></li>
@@ -94,9 +94,10 @@
                                                 </li>
                                             </ul>
                                         </li>
-                                            <li class="hidden-sm"><a href="teacher.html">Equipo</a><ul>
+                                            <li class="hidden-sm"><a href="teacher.html">Equipo</a>
+                                                <ul>
                                                     <li><a href="teacher.html">Profesores</a></li>
-                                                    <li><a href="teacher.html">Administrativos</a></li>
+                                                    <li><a href="Funcionarios.html">Administrativos</a></li>
                                                 </ul>
                                             </li>
                                             <li><a href="publicaciones.html">Investigaciones</a>
@@ -271,7 +272,7 @@
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="course-details.html">PROGRAMACIÓN</a></h3>
+                                <h3><a href="AreaProgramacion.html">PROGRAMACIÓN</a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
                                 <a class="default-btn" href="course-details.html">Leer más</a>
                             </div>   
@@ -287,7 +288,7 @@
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="course-details.html">SOFTWARE</a></h3>
+                                <h3><a href="AreaSoftware.html">MAGISTER</a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
                                 <a class="default-btn" href="course-details.html">Leer más</a>
                             </div>   
