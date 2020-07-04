@@ -125,6 +125,7 @@ label {
 p {
     font-size: 14px;
     line-height: 24px;
+    text-align: justify;
     color: #666666;
     font-family: 'Open Sans', sans-serif;
 }
@@ -189,6 +190,8 @@ textarea {
 }
 #detalles_dpto {
     margin-top:  -100px;
+    top: 30px;
+    left: 50px;
 }
 .banner-content {
     padding: 132px 0 134px;
