@@ -2138,6 +2138,13 @@ textarea {
     margin-top: -150px;
 }
 .blog-details-content{padding-top: 30px}
+.blog-details-content h3{
+    font-size: 19px;
+    color: #303030;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5px;
+}
 .blog-details-content h2{
     font-size: 24px;
     color: #303030;
