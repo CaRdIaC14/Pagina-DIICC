@@ -2177,6 +2177,9 @@ textarea {
     line-height: 25px;
     margin-top: 35px;
 }
+.blog-details-content li{
+    text-align: justify;
+}
 .reply-area h3{
     font-size: 20px;
     color: #303030;
