@@ -265,46 +265,46 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-course">
                             <div class="course-img">
-                                <a href="course-details.html"><img src="img/course/course1.jpg" alt="course">
+                                <a href="AreaProgramacion.html"><img src="img/areas/ArtificialIntelligent/img1.jpg" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="AreaProgramacion.html">PROGRAMACIÓN</a></h3>
+                                <h3><a href="AreaProgramacion.html">Inteligencia de Maquinas</a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="course-details.html">Leer más</a>
+                                <a class="default-btn" href="AreaProgramacion.html">Leer más</a>
                             </div>   
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-course">
                             <div class="course-img">
-                                <a href="course-details.html"><img src="img/course/course2.jpg" alt="course">
+                                <a href="AreaSoftware.html"><img src="img/areas/SoftwareEngineering/img1.jpg" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="AreaSoftware.html">MAGISTER</a></h3>
+                                <h3><a href="AreaSoftware.html">Ingenieria de<br>Softwares<br> </a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="course-details.html">Leer más</a>
+                                <a class="default-btn" href="AreaSoftware.html">Leer más</a>
                             </div>   
                         </div>
                     </div>
                     <div class="col-md-4 hidden-sm col-xs-12">
                         <div class="single-course">
                             <div class="course-img">
-                                <a href="course-details.html"><img src="img/course/course3.jpg" alt="course">
+                                <a href="course-details.html"><img src="img/areas/GestionTI/img1.jpg" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="course-details.html">DESARROLLO</a></h3>
+                                <h3><a href="course-details.html">Gestion <br>TI<br></a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
                                 <a class="default-btn" href="course-details.html">Leer más</a>
                             </div>   
@@ -597,16 +597,14 @@
             <div class="footer-bottom ">
                 <div class="container">
                     <div class="row">
-                        <div class="class col-md-4">
-                            <p class="text-center">Copyright 2019 DIICC</p>
+                        <div class="class col-xs-6">
+                            <p class="text-center">© Creado por alumnos de Ingeniería Civil en Computación e Informática 2019-2020. </p>
                             
                         </div> 
-                        <div class="class col-md-4">
-                            <p class="text-center">Facultad de Ingeniería. Departamento de Ingeniería Informática y Ciencias de la Computación.</p>
+                        <div class="class col-xs-6">
+                            <p class="text-center">Departamento de Ingeniería Informática y Ciencias de la Computación.</p>
                         </div>
-                        <div class="class col-md-4">
-                            <p class="text-center">Creado por alumnos de Ingeniería Civil en Computación e Informática.</p>
-                        </div>
+                        
                     </div>
                 </div>    
             </div>
