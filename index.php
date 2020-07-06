@@ -129,7 +129,7 @@
         <section id="slider-container" class="slider-area"> 
             <div class="slider-owl owl-theme owl-carousel"> 
                 <!-- Start Slingle Slide -->
-                <div class="single-slide item" style="background-image: url(img/slider/slider1.jpg)">
+                <div class="single-slide item" style="background-image: url(img/slide/img1.jpg)">
                     <!-- Start Slider Content -->
                     <div class="slider-content-area">  
                         <div class="container">
@@ -598,11 +598,11 @@
             <div class="footer-bottom ">
                 <div class="container">
                     <div class="row">
-                        <div class="class col-xs-6">
+                        <div class="col-md-6 col-xs-12">
                             <p class="text-center">© Creado por alumnos de Ingeniería Civil en Computación e Informática 2019-2020. </p>
                             
                         </div> 
-                        <div class="class col-xs-6">
+                        <div class="col-md-6 col-xs-12">
                             <p class="text-center">Departamento de Ingeniería Informática y Ciencias de la Computación.</p>
                         </div>
                         
