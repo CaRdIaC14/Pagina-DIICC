@@ -27,12 +27,13 @@
     </head>
     <body>
 
-		<!-- Header -->
+    <body>
+        <!-- Header -->
         <header class="top">
             <div class="header-top">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="col-md-8 col-sm-8 col-xs-8">
                             <div class="header-top-right">
                             	<ul>
                                 	<li><a href="http://www.moodle.uda.cl/" target="_blank">Moodle</a></li>
@@ -40,7 +41,7 @@
                             	</ul>
                             </div>
                         </div>
-                        <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="col-md-4 col-sm-4 col-xs-4">
                             <div class="header-top-right text-right">
                                 <ul>
                                     <li><a href="login.php">Iniciar sesión</a></li>
