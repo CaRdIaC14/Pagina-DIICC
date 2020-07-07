@@ -197,7 +197,7 @@
                             <div class="single-widget">
                                 <h3>información</h3>
                                 <ul>
-                                    <li><a href="teacher.html">Profesores</a></li>
+                                <li><a href="teacher.html">Profesores</a></li>
                                     <li><a href="noticias.php">Noticias</a></li>
                                     <li><a href="event.html">Eventos</a></li>
                                     <li><a href="malla1.html">Malla</a></li>
@@ -228,12 +228,16 @@
                     </div>
                 </div>
             </div>   
-            <div class="footer-bottom text-center">
+            <div class="footer-bottom ">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xs-12">
-                            <p>Creado por alumnos de Ingeniería Civil en Computación e Informática.</p>
+                        <div class="col-md-6 col-xs-12">
+                            <p class="text-center">© Creado por alumnos de Ingeniería Civil en Computación e Informática 2019-2020. </p>
+                            
                         </div> 
+                        <div class="col-md-6 col-xs-12">
+                            <p class="text-center">Departamento de Ingeniería Informática y Ciencias de la Computación.</p>
+                        </div>
                     </div>
                 </div>    
             </div>
