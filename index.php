@@ -85,7 +85,7 @@
                                                         <li><a href="Carrera-postitulo-Diplomado-gestion.html">Diplomado en gestión de tecnologias de la información</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="AreaSoftware.html">Postgrado</a>
+                                                <li><a href="#">Postgrado</a>
                                                     <ul>
                                                         <li><a href="postgrado-tecnologia.html">Magister en tecnologias de la informacion e innovación</a></li>
                                                         <li><a href="postgrado-informatica.html">Magister en Informática y Ciencias de la Computación</a></li>
@@ -150,7 +150,7 @@
                 </div>
                 <!-- End Slingle Slide -->
                 <!-- Start Slingle Slide -->
-                <div class="single-slide item" style="background-image: url(img/slider/slider2.jpg)">
+                <div class="single-slide item" style="background-image: url(img/slide/img2.jpg)">
                     <!-- Start Slider Content -->
                     <div class="slider-content-area">   
                         <div class="container">
@@ -161,7 +161,7 @@
                                             <h3>MALLA </h3>
                                             <h2>CURRICULAR </h2>
                                             <p>Conoce la malla de nuestra carrera </p>
-                                            <a class="default-btn" href="about.html">Ver malla</a>
+                                            <a class="default-btn" href="malla1.html">Ver malla</a>
                                         </div>
                                     </div>
                                 </div>
@@ -172,7 +172,7 @@
                 </div>
                 <!-- End Slingle Slide -->
                 <!-- Start Slingle Slide -->
-                <div class="single-slide item" style="background-image: url(img/slider/slider3.jpg)">
+                <div class="single-slide item" style="background-image: url(img/slide/img3.jpg)">
                     <!-- Start Slider Content -->
                     <div class="slider-content-area">  
                         <div class="container">
@@ -183,7 +183,7 @@
                                             <h3>PROFESORES </h3>
                                             <h2> </h2>
                                             <p>Conoce a nuestros profesores  </p>
-                                            <a class="default-btn" href="about.html">Ver profesores</a>
+                                            <a class="default-btn" href="teacher.html">Ver profesores</a>
                                         </div>
                                     </div>
                                 </div>
@@ -266,30 +266,30 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-course">
                             <div class="course-img">
-                                <a href="AreaProgramacion.html"><img src="img/areas/ArtificialIntelligent/img1.jpg" alt="course">
+                                <a href="#"><img src="img/areas/ArtificialIntelligent/img1.jpg" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="AreaProgramacion.html">Inteligencia de Maquinas</a></h3>
+                                <h3><a href="#">Inteligencia de Maquinas</a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="AreaProgramacion.html">Leer más</a>
+                                <a class="default-btn" href="#">Leer más</a>
                             </div>   
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-course">
                             <div class="course-img">
-                                <a href="AreaSoftware.html"><img src="img/areas/SoftwareEngineering/img1.jpg" alt="course">
+                                <a href="postgrado-procesos-software.html"><img src="img/areas/SoftwareEngineering/img1.jpg" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="AreaSoftware.html">Ingenieria de<br>Softwares<br> </a></h3>
+                                <h3><a href="postgrado-procesos-software.html">Ingenieria de<br>Softwares<br> </a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
                                 <a class="default-btn" href="AreaSoftware.html">Leer más</a>
                             </div>   
@@ -298,16 +298,16 @@
                     <div class="col-md-4 hidden-sm col-xs-12">
                         <div class="single-course">
                             <div class="course-img">
-                                <a href="course-details.html"><img src="img/areas/GestionTI/img1.jpg" alt="course">
+                                <a href="Carrera-postitulo-Diplomado-gestion.html"><img src="img/areas/GestionTI/img1.jpg" alt="course">
                                     <div class="course-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
                                 </a>
                             </div>
                             <div class="course-content">
-                                <h3><a href="course-details.html">Gestion <br>TI<br></a></h3>
+                                <h3><a href="Carrera-postitulo-Diplomado-gestion.html">Gestion <br>TI<br></a></h3>
                                 <p>I must explain to you how all this a mistaken idea of denouncing great explorer of the rut the is lder of human happiness</p>
-                                <a class="default-btn" href="course-details.html">Leer más</a>
+                                <a class="default-btn" href="Carrera-postitulo-Diplomado-gestion.html">Leer más</a>
                             </div>   
                         </div>
                     </div>
@@ -459,11 +459,11 @@
                             <div class="single-testimonial">
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="img/testimonial/testimonial.jpg" alt="testimonial">
+                                        <img src="img/testimonia/img1.jpg" alt="testimonial">
                                     </div>
                                     <div class="testimonial-content">
                                         <p>Palabras del director de la carrera para invitación a nuevos alumnos como futuros profesionales...</p>
-                                        <h4>Juanito Perez</h4>
+                                        <h4>Wilson Rojas Castillo</h4>
                                         <h5>Director, Departamento de ingenieria civil informática y ciencias de la computación.</h5>
                                     </div>
                                 </div>
