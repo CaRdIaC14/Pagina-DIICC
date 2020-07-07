@@ -46,9 +46,9 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+            <li><a href="AdminMenu.php" class="Blancol">Volver</a></li>
             <li><a href="signup.php" class="Blancol">Registrar usuario</a></li>
-            <li><a href="#" class="Blancol">Opciones</a></li>
-            <li><a href="index.php">Salir</a></li>
+            <li><a href="login.php">Salir</a></li>
           </ul>
         </div>
       </div>
