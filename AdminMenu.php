@@ -38,19 +38,25 @@
       <div style="height: 50px;"></div>
       <div class="row">
           <div class="row placeholders">
-            <div class="col-xs-6 col-sm-4 placeholder resaltar paddintop" onclick="window.location = 'AdminGestorDeNoticias.php'">
+            <div class="col-xs-1 col-sm-3 placeholder resaltar paddintop" onclick="window.location = 'AdminGestorDeNoticias.php'">
               <label for="Noticias">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h3>Noticias</h4>
+              <img src="img/AdminMenu/Noticias.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h3>Noticias</h3>
               </label>
             </div>
-            <div class="col-xs-6 col-sm-4 placeholder resaltar paddintop" onclick="window.location = 'AdminMenu - Perfil.html'">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h3>Editar Perfil</h4>
+            <div class="col-xs-5 col-sm-3 placeholder resaltar paddintop" onclick="window.location = 'AdminMenu - Perfil.html'">
+              <img src="img/AdminMenu/Investigacion.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h3>Agregar Investigación</h3>
             </div>
-            <div class="col-xs-6 col-sm-4 placeholder resaltar paddintop" onclick="window.location = 'AdminBolsa.html'">
+            <div class="col-xs-6 col-sm-3 placeholder resaltar paddintop" onclick="window.location = 'AdminBolsa.html'">
+              <img src="img/AdminMenu/BolsaTrabajo.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
+              <h3>Bolsa de Trabajo</h3>
+            </div>
+            <div class="col-xs-6 col-sm-3 placeholder resaltar paddintop" onclick="window.location = 'AdminGestorDeNoticias.php'">
+              <label for="Noticias">
               <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h3>Bolsa de Trabajo</h4>
+              <h3>Inserte Texto</h3>
+              </label>
             </div>
           </div>
       </div>
