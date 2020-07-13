@@ -1533,8 +1533,8 @@ textarea {
     margin-bottom: 35px;
     font-family: 'Open Sans', sans-serif;
 }
-.course-details-left{float: left; padding-right: 50px; width: 58%}
-.course-details-right{overflow: hidden; width: 42%}
+.course-details-left{float: left; padding-right: 50px;}
+.course-details-right{overflow: hidden;}
 .course-details-left h3, .course-details-right h3{
     font-weight: 700;
     text-transform: uppercase;
@@ -2142,7 +2142,7 @@ textarea {
 }
 .blog-details-content{padding-top: 30px}
 .blog-details-content h3{
-    font-size: 19px;
+    font-size: 15px;
     color: #303030;
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
