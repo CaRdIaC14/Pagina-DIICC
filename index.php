@@ -446,7 +446,7 @@
                             <div class="single-testimonial">
                                 <div class="testimonial-info">
                                     <div class="testimonial-img">
-                                        <img src="img/testimonia/img1.jpg" alt="testimonial">
+                                        <img src="img/testi/img1.jpg" alt="testimonial">
                                     </div>
                                     <div class="testimonial-content">
                                         <p>Palabras del director de la carrera para invitación a nuevos alumnos como futuros profesionales...</p>
