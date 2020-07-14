@@ -44,7 +44,7 @@
               <h3>Noticias</h3>
               </label>
             </div>
-            <div class="col-xs-5 col-sm-3 placeholder resaltar paddintop" onclick="window.location = 'AdminMenu - Perfil.html'">
+            <div class="col-xs-5 col-sm-3 placeholder resaltar paddintop" onclick="window.location = 'AdminGestorDeArticulos.php'">
               <img src="img/AdminMenu/Investigacion.png" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
               <h3>Agregar Investigación</h3>
             </div>
