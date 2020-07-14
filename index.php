@@ -207,33 +207,17 @@
                                 $sql = "select * from noticias";// mejorar query falta nombre del que subio la noticia
                                 $resultado = mysqli_query($conexion,$sql);
                                 while ($mostrar = mysqli_fetch_array($resultado)) {
-                            ?>
-                            <div class="single-notice-left mb-25 pb-25">
-                                <h4><?php echo $mostrar['fecha']; ?></h4>
-                                <p><?php echo $mostrar['titulo']; ?> </p>
-                            </div>
-                            <?php } ?>
+                                ?>
+                                    <div class="single-notice-left mb-25 pb-25">
+                                        <img src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>",id="panelNoticia">
+                                        <h4><?php echo $mostrar['fecha']; ?></h4>
+                                        <p><?php echo $mostrar['titulo']; ?> </p>
+                                    </div>
+                                <?php } ?>
                         </div>
                     </div>
-                    <!-- <div class="col-md-6 col-sm-6 col-xs-12">
-                        <div class="notice-right">
-                            <div class="single-notice-right mb-25 pb-25">
-                                <h3>PERFIL DE EGRESO</h3>
-                                <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
-                            </div> 
-                            <div class="single-notice-right mb-25 pb-25">
-                                <h3>MISIÓN</h3>
-                                <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
-                            </div> 
-                            <div class="single-notice-right">
-                                <h3>VISIÓN</h3>
-                                <p>I must explain to you how all this mistaken idea of denouncing pleure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings </p>
-                            </div>   
-                        </div>
-                    </div> -->
-                </div>
-            </div>
         </section>
+        
         <!-- Notice End -->
         <!-- Choose Start -->
         <section class="choose-area pb-85 pt-77">
