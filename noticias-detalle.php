@@ -141,7 +141,7 @@
                     <div class="col-md-8">
                         <div class="blog-details">
                             <div class="blog-details-img">
-                                <img src="img/blog/detalle.jpg">
+                            <img src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>"></a>
                             </div>
                             <div class="blog-details-content">
                                 <h2><?php echo $mostrar['titulo']; ?></h2>

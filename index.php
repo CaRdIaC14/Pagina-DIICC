@@ -209,7 +209,10 @@
                                 while ($mostrar = mysqli_fetch_array($resultado)) {
                                 ?>
                                     <div class="single-notice-left mb-25 pb-25">
-                                        <img src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>",id="panelNoticia">
+                                        <div class="panelNoticias">
+                                            <img src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>">
+                                        </div>
+                                        
                                         <h4><?php echo $mostrar['fecha']; ?></h4>
                                         <p><?php echo $mostrar['titulo']; ?> </p>
                                     </div>

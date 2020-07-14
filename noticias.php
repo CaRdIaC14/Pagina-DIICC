@@ -156,7 +156,7 @@
                     <div class="col-md-4 col-sm-6 col-xs-12">
                         <div class="single-blog mb-60">
                             <div class="blog-img">
-                                <a href="noticias-detalle.html"><img src="img/blog/noticia1.jpg"></a>
+                                <?php echo '<a href="noticias-detalle.php?id='.$mostrar["id"].'"></a>';?><img src="data:image/jpg;base64,<?php echo base64_encode($mostrar["imagen"]); ?>"></a>
                             </div>
                             <div class="blog-content">
                                 <div class="blog-top">
