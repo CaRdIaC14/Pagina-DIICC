@@ -51,7 +51,7 @@
 	   titulo       varchar(250) not null,
 	   fecha        TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	   descripcion  text not null,
-	   imagen       text,
+	   imagen       longblob,
 	   correo       varchar(45) not null,
 	   FOREIGN KEY (correo) REFERENCES Usuarios(correo) 
 	);";
