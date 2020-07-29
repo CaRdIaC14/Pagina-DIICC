@@ -76,39 +76,55 @@ require_once 'config.php';
 
                         <thead>
                             <tr>
-                                <th>Titulo</th>
-                                <th>Descripcion</th>
-                                <th>Fecha de Publicacion</th>
-                                <th>Profesor</th>
-                                <th>Accion</th>
+                                <th>Titulo Publicación</th>
+                                <th>Revisar/Congreso</th>
+                                <th>Autores</th>
+                                <th>Fecha</th>
+                                <th>Paginas</th>
+                                <th>Base de datos</th>
+                                <th>Cuartil(FI)</th>
+                                <th>Acceso</th>
+                               
+                                <th></th>
+                                <th>Acción</th>
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                                    $sql = "select * from noticias";// mejorar query falta nombre del que subio la noticia
+                                    $sql = "select * from publicaciones";// mejorar query falta nombre del que subio la noticia
                                     $resultado = mysqli_query($conexion,$sql);
                                     while ($mostrar = mysqli_fetch_array($resultado)) {
                                         ?>
-                                        <form action="ModificarNoticia.php" autocomplete="off" method="POST" enctype="multipart/form-data">
+                                        <form action="ModificarArticulo.php" autocomplete="off" method="POST" enctype="multipart/form-data">
                                             <tr>
                                                 <td style="display: none;"><input type="text" name="id"
                                                     value="<?php echo $mostrar['id']; ?>" size="50" maxlength="50"></td>
-                                                    <td><input type="text" name="titulo" value="<?php echo $mostrar['titulo']; ?>"
+                                                    <td><input type="text" name="titulo" value="<?php echo $mostrar['Titulo Publicacion']; ?>"
                                                         size="50" maxlength="50"></td>
-                                                        <td><textarea
-                                                            name="descripcion"> <?php echo $mostrar['descripcion']; ?></textarea>
+                                                        <td><input type="text" name="Revision" value="<?php echo $mostrar['Revision']; ?>"
+                                                        size="50" maxlength="50"></td>
+                                                        <td><input type="text" name="Autores" value="<?php echo $mostrar['Autores']; ?>"
+                                                        size="50" maxlength="50"></td>
+                                                        <td><input type="text" name="fecha" value="<?php echo $mostrar['Fecha']; ?>"
+                                                        size="50" maxlength="50"></td>
+                                                        <td><input type="text" name="paginas" value="<?php echo $mostrar['paginas']; ?>"
+                                                        size="50" maxlength="50"></td>
+                                                        <td><input type="text" name="base" value="<?php echo $mostrar['Bases de datos']; ?>"
+                                                        size="50" maxlength="50"></td>
+                                                        <td><input type="text" name="Cuartil" value="<?php echo $mostrar['Cuartil']; ?>"
+                                                        size="50" maxlength="50"></td>
+                                                        <td><input type="text" name="Acceso" value="<?php echo $mostrar['Acceso']; ?>"
+                                                        size="50" maxlength="50"></td>
+
+                                                            
                                                         </td>
-                                                        <td><?php echo $mostrar['fecha']; ?></td>
-                                                        <td><input type="file" name="img"></td>
-                                                        <td>
-                                                            <button type="submit" class="btn btn-success">Modificar Noticia</button>
-                                                        </td>
+                                                        <td><button type="submit" class="btn btn-success">Modificar Articulo</button></td>
                                                     </form>
-                                                    <form action="eliminarNoticia.php" method="post" autocomplete="off">
+                                                    <form action="eliminarArticulo.php" method="post" autocomplete="off">
                                                         <td>
                                                             <input type="text" name="id" value="<?php echo $mostrar['id']; ?>"
                                                             style="display: none;">
-                                                            <button type="submit" class="btn btn-danger">Eliminar Noticia</button>
+                                                            <button type="submit" class="btn btn-danger">Eliminar Articulo</button>
                                                         </td>
                                                     </form>
                                                 </tr>
