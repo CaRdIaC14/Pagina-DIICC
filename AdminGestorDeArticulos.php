@@ -139,39 +139,36 @@ require_once 'config.php';
                                             </div>
 
                                             <div class="panel-body">
-                                                <form class="form-horizontal" role="form" action="crearNoticia.php" method="POST" enctype="multipart/form-data">
+                                                <form class="form-horizontal" role="form" action="crearPublicacion.php" method="POST" enctype="multipart/form-data">
                                                    <div class="form-group">
-                                                     <label for="Titulo"
-                                                class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label">Academico: </label>
-                                                <div class="col-md-10">
-                                                    <select class="form-control" id="exampleFormControlSelect1">
-                                                      <option>-----</option>
-                                                      <?php
-                                                      session_start();
-                                                      require_once"config.php";
-                                                      $query="SELECT Nombre, rut FROM academicos";
-                                                      $res= $conexion->query($query);
-                                                      while($row=$res->fetch_assoc()){
-                                                        ?>
-                                                        <option>
+                                                        <label for="Titulo" class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label">Academico: </label>
+                                                        <div class="col-md-10">
+                                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                            <option>-----</option>
                                                             <?php
-                                                                echo $row['Nombre'];
+                                                            session_start();
+                                                            require_once"config.php";
+                                                            $query="SELECT Nombre, rut FROM academicos";
+                                                            $res= $conexion->query($query);
+                                                            while($row=$res->fetch_assoc()){
                                                                 ?>
-                                                        </option>
-                                                      <?php
-                                                    }
-                                                    ?>
-                                                    </select>
-                                                </div>
-                                                    
-                                              </div>
-                                              <div class="form-group">
-                                                <label for="Titulo"
-                                                class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label">Titulo Publicación: </label>
-                                                <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                                                    <input type="text" class="form-control" name="Titulo" placeholder=""
-                                                    required="">
-                                                </div>
+                                                                <option>
+                                                                    <?php echo $row['Nombre'];?>
+                                                                </option>
+                                                                <input type="hidden" name="rut" value="<?php echo $row['rut'];?>">
+                                                            <?php
+                                                            }
+                                                            ?>
+                                                            </select>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="Titulo"
+                                                        class="col-xs-2 col-sm-2 col-md-2 col-lg-2 control-label">Titulo Publicación: </label>
+                                                        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                                            <input type="text" class="form-control" name="Titulo" placeholder=""
+                                                            required="">
+                                                        </div>
                                             </div>
                                             <div class="form-group">
                                                 <label
