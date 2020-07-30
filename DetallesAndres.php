@@ -148,6 +148,35 @@
                         <div class="teacher-details-img">
                             <img src="img/academicos/img7.jpg" alt="teacher">  
                         </div>
+                        <style type="text/css">
+                            table, th, td{
+                                border: 1px solid black;
+                            }
+                        </style>
+                        <h3>Artículos</h3>
+                        <table style="width: 100%">
+                            <tr align="center">
+                                <td>Título</td>
+                                <td>Autores</td>
+                                <td>Fecha de Publicación</td>
+                                <td>Número de Páginas</td>
+                                <td>Ver artículo</td>
+                            </tr>
+                            <?php
+                            include("config.php");
+                            $query="SELECT `TituloPublicacion`, `Autores`, `Fecha`, `paginas`, `Acceso` FROM `publicaciones` WHERE rut=123456";
+                            $res=$conexion->query($query);
+                            while($row =$res->fetch_assoc()){
+                                ?>
+                                <tr align="center">
+                                    <td><?php echo $row['TituloPublicacion'];?></td>
+                                    <td><?php echo $row['Autores'];?></td>
+                                    <td><?php echo $row['Fecha'];?></td>
+                                    <td><?php echo $row['paginas'];?></td>
+                                    <td><a href="<?php echo $row['Acceso'];?>">Ver Artículo</a></td>
+                            <?php 
+                        }?>
+                        </table>
                     </div>
                     <div class="col-md-7 col-sm-7 col-xs-12">
                         <div class="teacher-details-content ml-50">
@@ -160,51 +189,7 @@ Universidad de Atacama y cumpliendo labores como tutor de cohorte y de vinculaci
 medio. Su área de interés es la ingeniería de datos y del conocimiento, particularmente minería dedatos y algoritmos inteligentes, y donde últimamente ha desarrollando trabajos en esta área.Ha participado como investigador y colaborador en grupos de trabajo nacionales e internacionales de dicados a ciudades inteligentes y eficiencia energética.</p>
                             <ul>
                                 <li><span>Grado Academico: </span>Licenciado en Ciencias de la Ingeniería, Universidad de Atacama (2008).Magister en Informática y Ciencias de la Computación, Universidad de Atacama (2017) </li>
-                                <li><span>Areas de interes: </span> Lenguajes de Programación.Inteligencia de negocio.Data WareHouse, DataMart, Base de Datos.Desarrollo de Software.Investigación, desarrollo e Innovación Tecnológica.</li>
-                                <li><span>Publicaciones: </span>Carrizo D., Alfaro A., y Rodrigo Loyola. Propuesta de un Modelo de Plan de Continuidad: Un Estudio de Caso. Actas XV Conferencia Iberoamericana en Sistemas, Cibernética e Informática.
-CISCI 2016. 5- 8 de Julio. 2016. Orlando, Florida, EE.UU.(Scopus).
-<p> Carrizo D., y Alfaro A. Methodological Proposal for Ethnographic Research in Software
-Engineering: A Case Study. Actas XII Jornadas Iberoamericanas de Ingeniería de Software e
-Ingeniería del Conocimiento. JIISIC 2017. 17- 18 de agosto. 2017. Lacatunga, Ecuador (Scopus).</p>
-<p>Carrizo D., Alfaro A. Método de Aseguramiento de la Calidad en una Metodología de Desarrollo de Software, Un Enfoque Práctico. Revista chilena de ingeniería Ingeniare. Vol. 26, N° 1, enero – marzo 2018. (Scopus-Scielo Chile).</p>
-<p>Dante Carrizo, Andrés Alfaro. Ethnographic Study on Practices of the Software Development
-Industry in Chile. Proceedings of the International Conference on Information Technology &amp;
-Systems (ICITS 2018). January 2018. DOI: 10.1007/978-3-319-73450-7_66.(Springer).</p>
-<p>Cornide-Reyes, H., Campillay, S., Alfaro, A., &amp; Villarroel, R. (2019). Identification of Skills for the
-Formation of Agile High Performance Teams: A Systematic Mapping. In Advances in Intelligent
-Systems and Computing (Vol. 884, pp. 141–152), Cham. https://doi.org/10.1007/978-3-030-
-02828-2_1. (Springer).</p>
-<p>Dante Carrizo, Andres Alfaro. Practices of the Chilean Software Industry: An Exploratory Study.
-Computers in Industry. (sometido)</p>
-<p>Dante Carrizo, Andrés Alfaro and John W. Castro. Aspectos Críticos de la Industria de Software en
-Chile. TTSDP 2019: 11th International Workshop on Tools and Techniques in Software
-Development Process. (sometido).</p></li>
-<li><span>Proyectos:</span>
-<p> Proyectos de Investigación.</p>
-<p> Cargo: Co-Investigador. </p>
-   <p> Título: “Estudio Etnográfico sobre Prácticas de la Industria
-Desarrolladora de Software en Chile”. 2015.</p>
- <p>Entidad: Fondo de Interno Universidad de
-Atacama DIUDA-Regular. </p>
- <p>Cuantía: $Ch6.000.000.</p>
-<p>Cargo: Asistente. Título: An ICT platform for sustainable energy ecosystem in Smart
-Cities.</p>
- <p>Código: ELAC2015/T100643. </p>
- <p>Investigador Principal: Ana  Mutule. </p>
-<p>Fecha inicio: 1/1/2017. </p>
-<p>Fecha Fin: 31/12/2020.</p>
-<p> Cuantía de la subvención: 642.679 €uros. </p>
-<p>Entidad: Fondo Europeo-Latinoamericano ERANET LAC CONICYT.</p>
-<p>Proyectos de Desarrollo y Otros:</p>
-<p>Cargo: Responsable Principal.</p> 
-    <p>Título: CONFERENCIA INTERNACIONAL DE
-INFORMATICA DEL NORTE DE CHILE (INFONOR-CHILE 2020).</p>
-<p> Código: 19PAEIR-
-115554. </p>
-<p>Entidad: Programa de Apoyo al Entorno para el Emprendimiento e Innovación
-PAEI-Regional-CORFO. 2019-2020. </p>
-<p>Cuantía: $6.000.000</p>
-                                </li>                                
+                                <li><span>Areas de interes: </span> Lenguajes de Programación.Inteligencia de negocio.Data WareHouse, DataMart, Base de Datos.Desarrollo de Software.Investigación, desarrollo e Innovación Tecnológica.</li>                                
                             </ul>
                         </div>
                     </div>
@@ -216,12 +201,6 @@ PAEI-Regional-CORFO. 2019-2020. </p>
                             <p><span>Correo: </span>servando.campillay@uda.cl</p>
                             <p><span>FONO: </span>(52) 2 255683</p>
                             
-                            <ul>
-                                <li><a href="https://www.facebook.com/devitems/?ref=bookmarks"><i class="zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="https://www.pinterest.com/devitemsllc/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                <li><a href="https://twitter.com/devitemsllc"><i class="zmdi zmdi-twitter"></i></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>

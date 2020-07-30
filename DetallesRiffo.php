@@ -148,6 +148,35 @@
                         <div class="teacher-details-img">
                             <img src="img/academicos/img3.jpg" alt="teacher">  
                         </div>
+                        <style type="text/css">
+                            table, th, td{
+                                border: 1px solid black;
+                            }
+                        </style>
+                        <h3>Artículos</h3>
+                        <table style="width: 100%">
+                            <tr align="center">
+                                <td>Título</td>
+                                <td>Autores</td>
+                                <td>Fecha de Publicación</td>
+                                <td>Número de Páginas</td>
+                                <td>Ver artículo</td>
+                            </tr>
+                            <?php
+                            include("config.php");
+                            $query="SELECT `TituloPublicacion`, `Autores`, `Fecha`, `paginas`, `Acceso` FROM `publicaciones` WHERE rut=123456";
+                            $res=$conexion->query($query);
+                            while($row =$res->fetch_assoc()){
+                                ?>
+                                <tr align="center">
+                                    <td><?php echo $row['TituloPublicacion'];?></td>
+                                    <td><?php echo $row['Autores'];?></td>
+                                    <td><?php echo $row['Fecha'];?></td>
+                                    <td><?php echo $row['paginas'];?></td>
+                                    <td><a href="<?php echo $row['Acceso'];?>">Ver Artículo</a></td>
+                            <?php 
+                        }?>
+                        </table>
                     </div>
                     <div class="col-md-7 col-sm-7 col-xs-12">
                         <div class="teacher-details-content ml-50">
@@ -158,24 +187,7 @@
                             <ul>
                                 <li><span>Grado Academico:</span> Dr. en Cs. de la Ingeniería, Área Ciencias de la Computación, Pontificia Universidad Católica de Chile, 2016.Magister en Ingeniería, Pontificia Universidad Católica de Chile, 2011.Licenciado en Ciencias de la Ingeniería con Mención en Electrónica, Universidad de Antofagasta, 1998. .</li>
                                 <li><span>Areas de interes: </span>Reconocimiento de patrones,Detección y seguimiento de objetos,Visión por computador usando múltiples vistas,Imágenes de rayos X.</li>
-                                <li><span>Jornadas (science citation index expanded-SCI/ISI): </span>V. Riffo, S. Flores, D. Mery, “Threat Objects Detection in X-Ray Images Using an Active Vision Approach,” Journal of Nondestructive Evaluation, vol. 36, no. 3, 2017,
-<p>-D. Mery, E. Svec, M. Arias, V. Riffo, J. M. Saavedra and S. Banerjee, “Modern Computer Vision Techniques for X-Ray Testing in Baggage Inspection,” Systems, Man, and Cybernetics: Systems, IEEE Transactions on, vol. 47, no.4, April, 2017, p. 682-692</p>
-<p>-D. Mery, V. Riffo, I. Zuccar and C. Pieringer, “Object recognition in X-ray testing using an efficient search algorithm in multiple views,” Insight – Non-Destructive Testing and Condition Monitoring, vol. 59, no. 2, February, 2017, p. 85-92</p>
-<p>-V. Riffo and D. Mery, “Automated Detection of Threat Objects Using Adapted Implicit Shape Model,” Systems, Man, and Cybernetics: Systems, IEEE Transactions on, vol. 46, no. 4, 2016</p>
-<p>-V. Riffo and D. Mery, ” Automated Detection of Threat Objects Using Adapted Implicit Shape Model,” Systems, Man, and Cybernetics: Systems, IEEE Transactions on, vol. PP, no. 99, 2015</p>
-<p>-D. Mery and V. Riffo, ” Automated Object Recognition Using Multiple X-ray Views,” Materials Evaluation, vol. 72, no. 11, November, 2014, p. 1362-1372,</p>
-<p>-D. Mery, G. Mondragon, V. Riffo and I. Zuccar, ” Detection of regular objects in baggage using multiple X-ray views,” Insight – Non-Destructive Testing and Condition Monitoring, vol. 55, no. 1, January, 2013, p. 16-21. (The John Grimwade Medal; Best paper award published in Insight in the 2013)</p>
-<p>-V. Riffo and D. Mery, ” Active X-ray Testing of Complex Objects,” Insight – Non-Destructive Testing and Condition Monitoring, vol. 54, no. 1, January, 2012, p. 28-35. (The Ron Halmshaw Award; Best paper on radiography published in Insight in the 2012)</p>
-<p>-D. Mery, I. Lillo, H. Loebel, V. Riffo, A. Soto, A.Cipriano and J.M. Aguilera, “Automated Fish Bone Detection Using X-ray Testing,” Journal of Food Engineering, vol. 105, no. 3, August, 2011, p. 485-492.</p></li>
-<li><span>Conferencias:</span>D. Mery and V. Riffo, “Automated Object Recognition in Baggage Screening using Multiple X-ray Views,” In 52nd Annual Conference of the British Institute for Non-Destructive Testing. Telford, UK, Sep. 10-12, 2013,
-<p>-D. Mery, V. Riffo, I. Zuccar and C. Pieringer, “Automated X-ray object recognition using an efficient search algorithm in multiple views,” In proceedings of 9th IEEE CVPR workshop on Perception Beyond the Visible Spectrum (PBVS’2013), Jun. 24th, 2013, Portland, USA, p. 1-7</p>
-<p>-V. Riffo and D. Mery, “Inspección Radioscópica Activa de Objetos Complejos Usando Múltiples Vistas,” Third Chilean Workshop on Pattern Recognition: Theory and Applications (CWPR 2011), Pucón, Chile, November, 2011. (in Spanish)</p>
-<p>-T. Schmidt, V. Riffo and D. Mery, “Dynamic Signature Recognition based on Fisher Discriminat,” 16th Iberoamerican Congress on Pattern Recognition (CIARP 2011), Lecture Notes in Computer Science, Pucón, Chile, November, 2011, p. 433-442</p>
-<p>-D. Mery, I. Lillo, H. Loebel, V. Riffo, A. Soto, A.Cipriano and J.M. Aguilera, “Automated Detection of Fish Bones in Salmon Fillets using X-ray Testing,” In 4th Pacific-Rim Symposium on Image and Video Technology (PSIVT2010), Singapore, November, 2010, p. 46-51</p>
-<p>-T. Schmidt, V. Riffo, D. Mery and B. Peralta, “Dynamic Signature Recognition and Classification with Computer Vision Algorithms,” In Proceedings of the IX International Conference of the Peruvian Computing Society Conference, Trujillo, Peru, October, 2010. (in Spanish)</p>
-<p>-V. Rojas, K. Carvajal and V. Riffo, “Sistema de Escaneo de Superficies Mediante Proyección de Líneas Láser,”, INFONOR-Chile 2010, Atacama, Chile, November, 2010. (in Spanish)</p>
-<p>-V. Riffo, T. Schmidt and D. Mery, “Propuesta Novedosa de Reconocimiento Dinámico de Firmas,” Proceeding of First Chilean Workshop on Pattern Recognition: Theory and Applications (CWPR 2009), Santiago, Chile, November, 2009, p. 44-51. (in Spanish).</p>
-</li>
+                                
                                 
                             </ul>
                         </div>
@@ -188,12 +200,7 @@
                             <p><span>Correo: </span>vladimir.riffo@uda.cl</p>
                             <p><span>FONO: </span>(52) 2 255685</p>
                             <p><span>Pagina Personal: </span> <a href="http://www.diicc.uda.cl/profesores/vriffo/ ">http://www.diicc.uda.cl/profesores/vriffo/</a> </p>
-                            <ul>
-                                <li><a href="https://www.facebook.com/devitems/?ref=bookmarks"><i class="zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="https://www.pinterest.com/devitemsllc/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                <li><a href="https://twitter.com/devitemsllc"><i class="zmdi zmdi-twitter"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>

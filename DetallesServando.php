@@ -155,7 +155,7 @@
                         </style>
                         <h3>Artículos</h3>
                         <table style="width: 100%">
-                            <tr>
+                            <tr align="center">
                                 <td>Título</td>
                                 <td>Autores</td>
                                 <td>Fecha de Publicación</td>
@@ -164,17 +164,16 @@
                             </tr>
                             <?php
                             include("config.php");
-                            $query="SELECT `TituloPublicacion`, `Autores`, `Fecha`, `paginas` FROM `publicaciones` WHERE rut=123456";
+                            $query="SELECT `TituloPublicacion`, `Autores`, `Fecha`, `paginas`, `Acceso` FROM `publicaciones` WHERE rut=123456";
                             $res=$conexion->query($query);
                             while($row =$res->fetch_assoc()){
                                 ?>
-                                <tr>
+                                <tr align="center">
                                     <td><?php echo $row['TituloPublicacion'];?></td>
                                     <td><?php echo $row['Autores'];?></td>
                                     <td><?php echo $row['Fecha'];?></td>
                                     <td><?php echo $row['paginas'];?></td>
-                                    <td><?php echo "<a href=\ ".$row['Acceso']."\" target=\"_blank\">".$row['Acceso']."</a>";?></td>
-                                </tr>
+                                    <td><a href="<?php echo $row['Acceso'];?>">Ver Artículo</a></td>
                             <?php 
                         }?>
                         </table>
@@ -190,15 +189,7 @@
                                 </li>
                                 <li><span>Areas de interes: </span>Lenguajes de programación,Base de datos,Inteligencia de negocios,Inteligencia artificial.
                                 </li>
-                                <li><span>Publicaciones: </span>-Servando F. Campillay Briones, Nahur M. Meléndez Araya; “EXPERIENCIA DE USO DE HERRAMIENTA COLECTIVA TECNOLÓGICA PARA MEJORAR LA COMUNICACIÓN E INTERACCIÓN TUTOR-COHORTE-ESTUDIANTE-PROFESOR”, Actas del IV Encuentro de Centros de Apoyo a la Docencia, Concepción, Chile, 3 – 4 Octubre.
-                                    <p>-Nahur M. Meléndez Araya,  Servando F. Campillay Briones; “USO DE OBJETOS DE APRENDIZAJE (OA) EN EDUCACIÓN SUPERIOR: EXPERIENCIA INGENIERÍA CIVIL EN COMPUTACIÓN E INFORMÁTICA”, Actas del IV Encuentro de Centros de Apoyo a la Docencia, Concepción, Chile, 3 – 4 Octubre.</p>
-                                    <p>-Servando F. Campillay Briones; Nahur M. Meléndez Araya, David Plaza Iriarte, “HERRAMIENTA TICS PARA EL APOYO DEL PROFESOR TUTOR DE COHORTE”, Actas 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.
-                                    </p>
-                                    <p>-Nahur M. Meléndez Araya, Jocelyn Soto Castillo, Servando F. Campillay Briones; “INTRODUCCIÓN A LA TEORÍA DE AUTÓMATAS CON METODOLOGÍAS ACTIVAS, APRENDIZAJE HEURÍSTICO Y TRABAJO EN EQUIPO”, Actas 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.</p>
-                                    <p>-María Pérez, Patricia Quezada, Nahur Meléndez, Servando Campillay, “INCORPORACIÓN DE AMBIENTE VIRTUAL DE APRENDIZAJE PARA LA COMPRENSIÓN TECNOLÓGICA EN LA UNIVERSIDAD DE ATACAMA.”, Actas 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.</p>
-                                    <p>-Jorge Rojas Varas, Carlos Carrasco Varas, Harnold Petzold Maggi, Nahur M. Meléndez Araya, Servando F. Campillay Briones, Jocelyn Soto Castillo “RA- KENSING: APLICACIÓN DE  APOYO CON REALIDAD AUMENTADA PARA PRE-ESCOLAR.”, Poster 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.</p>
-                                    <p>-Nahur M. Meléndez Araya, Servando F. Campillay Briones y Aldo A. Quelopana Retamal, “APLICACIÓN DE PATRONES DE DISEÑO PARA MODELADO DEL NEGOCIO”, Actas III Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2012, Arica, Chile. 8 – 10 Agosto 2012.
-                                    </p></li>
+                                
 
                                 </ul>
                             </div>

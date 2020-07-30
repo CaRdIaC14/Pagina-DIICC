@@ -148,6 +148,35 @@
                         <div class="teacher-details-img">
                             <img src="img/academicos/img6.jpg" alt="teacher">  
                         </div>
+                        <style type="text/css">
+                            table, th, td{
+                                border: 1px solid black;
+                            }
+                        </style>
+                        <h3>Artículos</h3>
+                        <table style="width: 100%">
+                            <tr align="center">
+                                <td>Título</td>
+                                <td>Autores</td>
+                                <td>Fecha de Publicación</td>
+                                <td>Número de Páginas</td>
+                                <td>Ver artículo</td>
+                            </tr>
+                            <?php
+                            include("config.php");
+                            $query="SELECT `TituloPublicacion`, `Autores`, `Fecha`, `paginas`, `Acceso` FROM `publicaciones` WHERE rut=123456";
+                            $res=$conexion->query($query);
+                            while($row =$res->fetch_assoc()){
+                                ?>
+                                <tr align="center">
+                                    <td><?php echo $row['TituloPublicacion'];?></td>
+                                    <td><?php echo $row['Autores'];?></td>
+                                    <td><?php echo $row['Fecha'];?></td>
+                                    <td><?php echo $row['paginas'];?></td>
+                                    <td><a href="<?php echo $row['Acceso'];?>">Ver Artículo</a></td>
+                            <?php 
+                        }?>
+                        </table>
                     </div>
                     <div class="col-md-7 col-sm-7 col-xs-12">
                         <div class="teacher-details-content ml-50">
@@ -158,13 +187,7 @@
                             <ul>
                                 <li><span>Grado Academico:</span>Licenciado en Cs. De la Ingeniería , Universidad de Atacama, 1995.Magíster en Informática Educativa, UTEM.</li>
                                 <li><span>Areas de interes: </span> TICs,Informática Educativa</li>
-                                <li><span>Proyectos y Publicaciones: </span>Sistema de Información SIUDA”, 1996.
-<p>  “Tecnologías Web y la imagen Corporativa de la Universidad de Atacama”, 2002</p>
-  <p>“Situación actual de la Computación e Informática para los Minusválidos”,2004</p>
- <p> “Propuesta de Implementación de Políticas de Seguridad Aplicada al DIICC”, 2004</p>
-  <p>“Plan de Migración de Telefonía Conmutada a Telefonía IP”,2005</p>
- <p> “Implementación de la Firma Digital Para la Empresa Aguas Chañar S. A.”,2006</p>
-</p></li>
+                                
                                 
                             </ul>
                         </div>
@@ -177,12 +200,7 @@
                             <p><span>Correo: </span>manuel.monasterio@uda.cl</p>
                             <p><span>FONO: </span>(52) 2 255682</p>
                             
-                            <ul>
-                                <li><a href="https://www.facebook.com/devitems/?ref=bookmarks"><i class="zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="https://www.pinterest.com/devitemsllc/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                <li><a href="https://twitter.com/devitemsllc"><i class="zmdi zmdi-twitter"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div>   
                 </div>   

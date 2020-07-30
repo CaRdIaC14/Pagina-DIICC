@@ -148,6 +148,35 @@
                         <div class="teacher-details-img">
                             <img src="img/academicos/img2.jpg" alt="teacher">  
                         </div>
+                        <style type="text/css">
+                            table, th, td{
+                                border: 1px solid black;
+                            }
+                        </style>
+                        <h3>Artículos</h3>
+                        <table style="width: 100%">
+                            <tr align="center">
+                                <td>Título</td>
+                                <td>Autores</td>
+                                <td>Fecha de Publicación</td>
+                                <td>Número de Páginas</td>
+                                <td>Ver artículo</td>
+                            </tr>
+                            <?php
+                            include("config.php");
+                            $query="SELECT `TituloPublicacion`, `Autores`, `Fecha`, `paginas`, `Acceso` FROM `publicaciones` WHERE rut=123456";
+                            $res=$conexion->query($query);
+                            while($row =$res->fetch_assoc()){
+                                ?>
+                                <tr align="center">
+                                    <td><?php echo $row['TituloPublicacion'];?></td>
+                                    <td><?php echo $row['Autores'];?></td>
+                                    <td><?php echo $row['Fecha'];?></td>
+                                    <td><?php echo $row['paginas'];?></td>
+                                    <td><a href="<?php echo $row['Acceso'];?>">Ver Artículo</a></td>
+                            <?php 
+                        }?>
+                        </table>
                     </div>
                     <div class="col-md-7 col-sm-7 col-xs-12">
                         <div class="teacher-details-content ml-50">
@@ -159,33 +188,7 @@
                                 <li><span>Grado Academico: </span>Magíster en Ingeniería Informática, Universidad Católica del Norte, Antofagasta, Chile.
 </li>
                                 <li><span>Areas de interes: </span>Ingeniería de Requisitos,  Ingeniería de Software,Calidad de Software,Sistemas de Información,Gestión de Proyectos Informáticos,DataMining,  Informática Educativa.</li>
-                                <li><span>Proyectos: </span> Cargo: Investigador Principal. Título: Proyecto de Investigación “Estudio de Aceptación Tecnológica en el Uso de Objetos de Aprendizaje (OA) en Educación Superior.”. Entidad: Fondo de Interno Universidad de Atacama.  Cuantía: $Ch2.000.000.
-  <p>-Cargo: Co-Investigador. Título: Proyecto de Investigación “Análisis de Impacto de Metodologías Activas y Aprendizaje Heurístico en Asignaturas de Ingeniería”. Entidad: Fondo de Interno Universidad de Atacama.  Cuantía: $Ch2.000.000.</p>
-</li>  
-<li><span>Capitulos de Libros: </span>                  
-Autores: Nahur Meléndez Araya, José Gallardo Arancibia, Liliana González Palacio, Claudio Meneses Villegas, Guillermo González. “ADOPTION OF TOTAL QUALITY APPROACHES IN REQUIREMENTS ENGINEERING”, en “Software Engineering: Methods, Modeling, And Teaching” p.133 – 148, Sello Editorial Universidad de Medellín, ISBN 978-958-8692-32-6, Medellín – Colombia. Agosto, 2011.
-<p>-Autores: Nahur Meléndez Araya, José Gallardo Arancibia, Claudio Meneses Villegas, Nahur Meléndez Castillo. “APLICACIÓN DE SIXSIGMA EN LOS PROCESOS DE INGENIERÍA DE REQUISITOS: Fase de Entrenamiento”, en “Ingeniería de Software e Ingeniería del Conocimiento: Tendencias de Investigación e Innovación Tecnológicas en Iberoamérica”, p.12 – 23, Alfaomega Grupo Editor, S.A. de C.V., ISBN 978-607-707-096-2, México, 2010.</p></li>
-<li><span>Publicaciones:</span>
-Nahur M. Meléndez Araya, Jocelyn Soto Castillo, Servando F. Campillay Briones; “INTRODUCCIÓN A LA TEORÍA DE AUTÓMATAS CON METODOLOGÍAS ACTIVAS, APRENDIZAJE HEURÍSTICO Y TRABAJO EN EQUIPO”, Actas 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.
-<p>Servando F. Campillay Briones; Nahur M. Meléndez Araya, David Plaza Iriarte, “HERRAMIENTA TICS PARA EL APOYO DEL PROFESOR TUTOR DE COHORTE”, Actas 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.</p>
-<p>María Pérez, Patricia Quezada, Nahur Meléndez, Servando Campillay, “INCORPORACIÓN DE AMBIENTE VIRTUAL DE APRENDIZAJE PARA LA COMPRENSIÓN TECNOLÓGICA EN LA UNIVERSIDAD DE ATACAMA.”, Actas 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.</p>
-<p>Jorge Rojas Varas, Carlos Carrasco Varas, Harnold Petzold Maggi, Nahur M. Meléndez Araya, Servando F. Campillay Briones, Jocelyn Soto Castillo “RA- KENSING: APLICACIÓN DE  APOYO CON REALIDAD AUMENTADA PARA PRE-ESCOLAR.”, Poster 1er Congreso Internacional de Educación con TIC, CEDUTIC 2013, Concepción, Chile, 18 – 19 Abril 2013.</p>
-<p>Nahur M. Meléndez Araya, Servando F. Campillay Briones y Aldo A. Quelopana Retamal, “APLICACIÓN DE PATRONES DE DISEÑO PARA MODELADO DEL NEGOCIO”, Actas III Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2012, Arica, Chile. 8 – 10 Agosto 2012</p>    
-<p>Jorge A. Pérez Fuentes, Javier A. Malebran Diamond, Nahur M. Meléndez Araya, José A. Gallardo Arancibia, “DISPOSITIVO PARA PREVENCIÓN DE ACCIDENTE FATAL POR IMPACTO EQUIPO PERSONA”, Actas III Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2012, Arica, Chile. 8 – 10 Agosto 2012</p>
-<p>Jefferson L. Williams Godoy, Víctor M. Briones Parra, Nahur M. Meléndez Araya,  José A. Gallardo Arancibia, “HERRAMIENTA DE APOYO PARA EL PROCESO DE CERTIFICACIÓN DE ASEGURAMIENTO DE CALIDAD BAJO NORMA NCH2909.”, Actas III Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2012, Arica, Chile. 8 – 10 Agosto 2012</p>
-<p>Nahur M. Meléndez Araya, José A. Gallardo Arancibia, Nahur J. Meléndez Castillo. “ADOPTION OF SIX-SIGMA PHILOSOPHY IN REQUIREMENTS ENGINEERING: TRAINING “YELLOW BELT””, Actas II Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2011, Copiapó, Chile. 17 – 19 Agosto 2011</p>
-<p>-Nahur Meléndez Araya, José Gallardo Arancibia, Liliana González Palacio, Claudio Meneses Villegas, Guillermo González, “ADOPTION OF TOTAL QUALITY APPROACHES IN REQUIREMENTS ENGINEERING”, Actas LASES 2011: Latin American Software Engineering Symposium, Medellín, Colombia. 11 y 12 Agosto, 2011.</p>
-<p>-Ignacio J. Araya Jaime, Roberto C. Hernández Robles, Nahur M. Meléndez Araya, José A. Gallardo Arancibia, Nahur J. Meléndez Castillo, Francisco J. Contreras Huerta, “IR-KAIZEN: MEJORAMIENTO DE LA INGENIERÍA DE REQUISITOS A TRAVÉS DE LA METODOLOGÍA KAIZEN”, Actas XIV CISAISI, Congreso Internacional Sudamericano de Ingeniería de Sistemas de Información, Oruro – Bolivia. Noviembre, 2010</p>
-<p>-Francisco. J. Contreras Huerta, Nahur M. Meléndez Araya, Ignacio J. Araya Jaime, Roberto C. Hernández Robles, José A. Gallardo Arancibia, Nahur J. Meléndez Castillo,“MEJORAMIENTO DE LA DOCUMENTACIÓN EN INGENIERÍA DE REQUISITOS A TRAVÉS DE LA INTRODUCCIÓN DE LA METODOLOGÍA POKA-YOKE”, Actas XIV CISAISI, Congreso Internacional Sudamericano de Ingeniería de Sistemas de Información, Oruro – Bolivia. Noviembre, 2010</p>
-<p>-Nahur M. Meléndez Araya, José A. Gallardo Arancibia, Claudio J. Meneses Villegas,Nahur J. Meléndez Castillo. “YELLOW BELT TRAINING IR-SIXSIGMA.” Actas XIV CISAISI, Congreso Internacional Sudamericano de Ingeniería de Sistemas de Información, Oruro – Bolivia. Noviembre, 2010</p>
-<p>-Eder L. Castillo Barraza, Nahur M. Meléndez Araya. José A. Gallardo Arancibia., Nahur J. Meléndez Castillo. “MEJORAMIENTO DE LA INGENIERÍA DE REQUISITOS MEDIANTE LA APLICACIÓN DE SISTEMA KANBAN”, Actas XIV CISAISI, Congreso Internacional Sudamericano de Ingeniería de Sistemas de Información, Oruro – Bolivia. Noviembre, 2010.</p>
-<p>-Nahur M. Meléndez Araya, José A. Gallardo Arancibia,  Claudio J. Meneses Villegas, Nahur J. Meléndez Castillo. “FILOSOFÍA SIX-SIGMA EN INGENIERÍA DE REQUISITOS: ENTRENAMIENTO WHITE BELTS.” Actas I Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2010, Antofagasta – Chile. Noviembre, 2010</p>
-<p>- Roberto C. Hernández Robles, Ignacio J Araya Jaime, Nahur M. Meléndez Araya, Francisco J. Contreras Huerta, Eder L. Castillo Barraza, José A. Gallardo Arancibia,“PROPUESTA DE APLICACIÓN DE KAIZEN EN INGENIERÍA DE REQUISITOS”, Poster  I Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2010, Antofagasta – Chile. Noviembre, 2010</p>
-<p>-Francisco J. Contreras Huerta, Eder L. Castillo Barraza, Nahur M. Meléndez Araya, Roberto C. Hernández Robles, Ignacio J Araya Jaime, José A. Gallardo Arancibia,“MEJORAMIENTO EN INGENIERÍA DE REQUISITOS A TRAVÉS DE LA INTRODUCCIÓN DE LA FILOSOFÍA POKA-YOKE.” Poster I Conferencia Internacional de Computación e Informática del Norte de Chile,  INFONOR Chile 2010, Antofagasta – Chile. Noviembre, 2010</p>
-<p>-Nahur M. Meléndez Araya, José A. Gallardo Arancibia, Claudio J. Meneses Villegas, Nahur J. Meléndez Castillo, “APLICACIÓN DE SIXSIGMA EN LOS PROCESOS DE INGENIERÍA DE REQUISITOS: FASE DE ENTRENAMIENTO”, Actas Jornadas Iberoamericanas de Ingeniería de Software e Ingeniería del Conocimiento (JIISIC) 2010, DBLP Computer Science Bibliography, Mérida, la Ciudad Blanca- México. Noviembre, 2010</p>
-<p>-Nahur  Meléndez Araya, Vianca Vega Zepeda, José Gallardo Arancibia, Claudio Meneses Villegas, ”IR-SIXSIGMA: MEJORA DE CALIDAD EN INGENIERÍA DE REQUISITOS MEDIANTE LA APLICACIÓN DE METODOLOGÍA SIX-SIGMA.”, Actas 3er Encuentro Informática y Gestión,   WorkShop Internacional EIG2009, Published on CEUR-WS vol 558: 06-Jan-2010. ONLINE: http://CEUR-WS.org/ Vol-558/  URN: urn:nbn:de: 0074-558-1 DBLP Computer Science Bibliography, Temuco-Chile, 3 y 4 Diciembre 2009.</p>
-<p>-Nahur Meléndez Araya, Vianca Vega Zepeda, José Gallardo Arancibia, Claudio Meneses Villegas, “UNA PROPUESTA PARA LA APLICACIÓN DE LA ESTRATEGIA SIX-SIGMA AL PROCESO DE INGENIERÍA DE REQUISITOS”, Actas XIII CISAISI, Congreso Internacional Sudamericano de Ingeniería de Sistemas de Información, Arica – Chile. Octubre, 2009</p>
-</li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -197,12 +200,7 @@ Nahur M. Meléndez Araya, Jocelyn Soto Castillo, Servando F. Campillay Briones; 
                             <p><span>Correo: </span>nahur.melendez@uda.cl</p>
                             <p><span>FONO: </span>(52) 2 255684</p>
                             
-                            <ul>
-                                <li><a href="https://www.facebook.com/devitems/?ref=bookmarks"><i class="zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="https://www.pinterest.com/devitemsllc/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                <li><a href="https://twitter.com/devitemsllc"><i class="zmdi zmdi-twitter"></i></a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                 </div>

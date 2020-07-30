@@ -148,6 +148,35 @@
                         <div class="teacher-details-img">
                             <img src="img/academicos/img8.jpg" alt="teacher">  
                         </div>
+                        <style type="text/css">
+                            table, th, td{
+                                border: 1px solid black;
+                            }
+                        </style>
+                        <h3>Artículos</h3>
+                        <table style="width: 100%">
+                            <tr align="center">
+                                <td>Título</td>
+                                <td>Autores</td>
+                                <td>Fecha de Publicación</td>
+                                <td>Número de Páginas</td>
+                                <td>Ver artículo</td>
+                            </tr>
+                            <?php
+                            include("config.php");
+                            $query="SELECT `TituloPublicacion`, `Autores`, `Fecha`, `paginas`, `Acceso` FROM `publicaciones` WHERE rut=123456";
+                            $res=$conexion->query($query);
+                            while($row =$res->fetch_assoc()){
+                                ?>
+                                <tr align="center">
+                                    <td><?php echo $row['TituloPublicacion'];?></td>
+                                    <td><?php echo $row['Autores'];?></td>
+                                    <td><?php echo $row['Fecha'];?></td>
+                                    <td><?php echo $row['paginas'];?></td>
+                                    <td><a href="<?php echo $row['Acceso'];?>">Ver Artículo</a></td>
+                            <?php 
+                        }?>
+                        </table>
                     </div>
                     <div class="col-md-7 col-sm-7 col-xs-12">
                         <div class="teacher-details-content ml-50">
@@ -158,8 +187,6 @@
                             <ul>
                                 <li><span>Grado Academico: </span>Máster en Ingeniería Informática y Ciencias de la Computación. Universidad de Atacama, Copiapó. Chile. 2016.</li>
                                 <li><span>Areas de interes:</span>Ingeniería de Requisitos, Ingeniería de Software, Integración entre la Usabilidad y la Ingeniería del Software, Docencia Universitaria, Servidores y Soporte de Servicios de LMS y implementación web y App.</li>
-                                <li><span>Publicaciones: </span>
-</p></li>
                                 
                             </ul>
                         </div>
@@ -172,12 +199,6 @@
                             <p><span>Correo: </span>jaqueline.manriquez@uda.cl</p>
                             <p><span>FONO: </span>(52) 888888</p>
                             
-                            <ul>
-                                <li><a href="https://www.facebook.com/devitems/?ref=bookmarks"><i class="zmdi zmdi-facebook"></i></a></li>
-                                <li><a href="https://www.pinterest.com/devitemsllc/"><i class="zmdi zmdi-pinterest"></i></a></li>
-                                <li><a href="#"><i class="zmdi zmdi-vimeo"></i></a></li>
-                                <li><a href="https://twitter.com/devitemsllc"><i class="zmdi zmdi-twitter"></i></a></li>
-                            </ul>
                         </div>
                     </div>
                 </div>
