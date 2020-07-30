@@ -84,7 +84,7 @@ require_once 'config.php';
                                 <th>Base de datos</th>
                                 <th>Cuartil(FI)</th>
                                 <th>Acceso</th>
-                               
+
                                 <th></th>
                                 <th>Acción</th>
                             </tr>
@@ -107,7 +107,7 @@ require_once 'config.php';
                                                         size="50" maxlength="50"></td>
                                                         <td><input type="date" name="fecha" value="<?php echo $mostrar['Fecha']; ?>"
                                                         size="50" maxlength="50"></td>
-                                                        <td><input type="text" name="paginas" value="<?php echo $mostrar['paginas']; ?>"
+                                                        <td><input type="number" name="paginas" value="<?php echo $mostrar['paginas']; ?>"
                                                         size="50" maxlength="50"></td>
                                                         <td><input type="text" name="base" value="<?php echo $mostrar['Basesdedatos']; ?>"
                                                         size="50" maxlength="50"></td>
@@ -115,8 +115,6 @@ require_once 'config.php';
                                                         size="50" maxlength="50"></td>
                                                         <td><input type="text" name="Acceso" value="<?php echo $mostrar['Acceso']; ?>"
                                                         size="50" maxlength="50"></td>
-
-                                                            
                                                         </td>
                                                         <td><button type="submit" class="btn btn-success">Modificar Articulo</button></td>
                                                     </form>

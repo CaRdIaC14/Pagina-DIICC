@@ -1,26 +1,23 @@
 <?php
-session_start();
-// Datos login
-$id       = $_POST['id'];
-$Titulo=	$_POST['Titulo'];
-$Revision      = $_POST['Revision'];
-$Autores     = $_POST['Autores'];
-$fecha	=$_POST['fecha'];
-$paginas=$_POST['paginas'];
-$base=$_POST['base'];
-$Cuartil=$_POST['Cuartil'];
-$Acceso=$_POST['Acceso'];
-$rut=$_POST['rut'];
+	session_start();
+	// Datos login
+	$id= $_POST['id'];
+	$Titulo=$_POST['titulo'];
+	$Revision=$_POST['Revision'];
+	$Autores=$_POST['Autores'];
+	$fecha=$_POST['fecha'];
+	$paginas=$_POST['paginas'];
+	$base=$_POST['base'];
+	$Cuartil=$_POST['Cuartil'];
+	$Acceso=$_POST['Acceso'];
+	$rut=$_POST['rut'];
 
-require_once 'config.php';
+	require_once 'config.php';
 
-// Insertar usuario
-$sql = $conexion->prepare(
-	"UPDATE `publicaciones` SET `Titulo Publicacion` = ?, `Revision` = ?, `Autores` = ? ,`Fecha` = ? `, paginas` = ?, `Bases de datos` = ?, `Cuartil` = ?,`Acceso` = ? WHERE `publicaciones`.`id` = {$id};");
-$sql->bind_param( "ssssssss", $Titulo, $Revision,$Autores, $fecha,$paginas,$base,$Cuartil,$Acceso );
-$sql->execute();
-
-$Exito = "El registro del Articulo se ha realizado con éxito. ";
-include_once "AdminGestorDeArticulos.php";
-
+	$query="UPDATE publicaciones SET TituloPublicacion='$Titulo',Revision='$Revision',Autores='$Autores',
+	Fecha='$fecha',paginas='$paginas',Basesdedatos='$base',Cuartil='$Cuartil',Acceso='$Acceso'
+	WHERE id=$id";
+	$res= $conexion->query($query);
+	$Exito = "El registro del Articulo se ha realizado con éxito. ";
+	include_once "AdminGestorDeArticulos.php";
 ?>
