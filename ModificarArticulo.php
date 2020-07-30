@@ -10,7 +10,6 @@
 	$base=$_POST['base'];
 	$Cuartil=$_POST['Cuartil'];
 	$Acceso=$_POST['Acceso'];
-	$rut=$_POST['rut'];
 
 	require_once 'config.php';
 
