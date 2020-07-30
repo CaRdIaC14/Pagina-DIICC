@@ -204,7 +204,7 @@
                         <div class="notice-left">
                             <h3>Panel de noticias</h3>
                             <?php
-                                $sql = "select * from noticias";// mejorar query falta nombre del que subio la noticia
+                                $sql = "select * from noticias ORDER BY id DESC";// mejorar query falta nombre del que subio la noticia
                                 $resultado = mysqli_query($conexion,$sql);
                                 while ($mostrar = mysqli_fetch_array($resultado)) {
                                 ?>
