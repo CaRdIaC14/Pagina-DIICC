@@ -10,7 +10,6 @@
 	$base=$_POST['base'];
 	$Cuartil=$_POST['Cuartil'];
 	$Acceso=$_POST['Acceso'];
-	$rut=$_POST['rut'];
 
 	require_once 'config.php';
 
@@ -18,6 +17,6 @@
 	Fecha='$fecha',paginas='$paginas',Basesdedatos='$base',Cuartil='$Cuartil',Acceso='$Acceso'
 	WHERE id=$id";
 	$res= $conexion->query($query);
-	$Exito = "El registro del Articulo se ha realizado con éxito. ";
+	$Exito = "La Modificacin del Articulo se ha realizado con éxito. ";
 	include_once "AdminGestorDeArticulos.php";
 ?>
