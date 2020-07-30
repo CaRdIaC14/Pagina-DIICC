@@ -12,12 +12,10 @@
 
     require_once 'config.php';
 
-    $query="INSERT INTO 'publicaciones'('Titulo Publicacion', 'Revision', 'Autores', 'Fecha', 'paginas', 'Bases de datos', 'Cuartil', 'Acceso', 'rut') VALUES ('$titulo','$revisar', '$autores','$fecha','$Paginas','$base','$Cuartil','$Acceso','$rut')";
+    $query="INSERT INTO publicaciones (TituloPublicacion, Revision, Autores, Fecha, paginas, Basesdedatos, Cuartil, Acceso, rut)
+    VALUES ('$titulo', '$revisar', '$autores', '$fecha', '$Paginas', '$base', '$Cuartil', '$Acceso', '$rut')";
     $res= $conexion->query($query);
     if($res){
-        echo "si";
-    }
-    else{
-        echo "no";
+        include_once "AdminGestorDeArticulos.php";
     }
 ?>

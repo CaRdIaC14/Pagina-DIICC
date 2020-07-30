@@ -99,17 +99,17 @@ require_once 'config.php';
                                             <tr>
                                                 <td style="display: none;"><input type="text" name="id"
                                                     value="<?php echo $mostrar['id']; ?>" size="50" maxlength="50"></td>
-                                                    <td><input type="text" name="titulo" value="<?php echo $mostrar['Titulo Publicacion']; ?>"
+                                                    <td><input type="text" name="titulo" value="<?php echo $mostrar['TituloPublicacion']; ?>"
                                                         size="50" maxlength="50"></td>
                                                         <td><input type="text" name="Revision" value="<?php echo $mostrar['Revision']; ?>"
                                                         size="50" maxlength="50"></td>
                                                         <td><input type="text" name="Autores" value="<?php echo $mostrar['Autores']; ?>"
                                                         size="50" maxlength="50"></td>
-                                                        <td><input type="text" name="fecha" value="<?php echo $mostrar['Fecha']; ?>"
+                                                        <td><input type="date" name="fecha" value="<?php echo $mostrar['Fecha']; ?>"
                                                         size="50" maxlength="50"></td>
                                                         <td><input type="text" name="paginas" value="<?php echo $mostrar['paginas']; ?>"
                                                         size="50" maxlength="50"></td>
-                                                        <td><input type="text" name="base" value="<?php echo $mostrar['Bases de datos']; ?>"
+                                                        <td><input type="text" name="base" value="<?php echo $mostrar['Basesdedatos']; ?>"
                                                         size="50" maxlength="50"></td>
                                                         <td><input type="text" name="Cuartil" value="<?php echo $mostrar['Cuartil']; ?>"
                                                         size="50" maxlength="50"></td>
